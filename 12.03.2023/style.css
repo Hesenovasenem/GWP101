@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    }
+body {
+    text-align: justify;
+}
+body form section {
+    background-color: gray ;
+}
+#sec2 {
+    background-color: bisque;
+}
+#sec3 {
+   background-color: rgb(81, 101, 81);
+}
+.lal {
+    color: blueviolet;
+}
+.bal {
+    color:green;
+}
+.lab {
+    color: purple;
+}
+.ada {
+    color: yellow;
+}
+.ana {
+  color: rgb(172, 68, 91);
+}
+.ata {
+    color: chocolate;
+    }
+.aga {
+    color: red;
+   }
+ul li {
+    color: green;
+}
+.ala {
+  color: blue; 
+}
+.snm {
+    color: rebeccapurple;
+    background-color: chocolate;
+}
+.sac {
+    background-color: yellowgreen;
+}
