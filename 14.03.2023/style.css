@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  
+  .bg-img {
+      background-image:url(css\ background.jpg);
+      height: 100vh;
+      background-size: cover;
+      display: flex;
+  }
+  .text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .shad {
+    text-shadow: 3px 3px yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h2 ::shadow{
+      
+  }
+  
+  
+  
+  nav ul li{
+      display: inline-block;
+  }
+  nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  #sec1 {background-image: url(dark.walpaper.png);background-repeat: no-repeat; background-size: cover;background-attachment: fixed;height: 100vh; 
+    
+  }
+  #sec2 {
+    background-image: url(skaf.png); 
+  }
+  #tec{
+    color: aliceblue;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Learn {
+    border: solid black 1px
+    
+}
+  
