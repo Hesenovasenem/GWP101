@@ -1,0 +1,58 @@
+.text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .minion {
+    background-image: url(minionum\ kekilli.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 250px;
+    width: 300px;
+    height: 300px;
+  }
+  .text2 {
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(1, 33, 1)
+  }
+  .text3 {
+    color: #3707ba;
+  }
+  h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 90px;
+    background-color: rgb(161, 43, 124);
+  }
+  @media only screen and (max-width: 786px) {
+    .sec1 {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .text2 {
+      background-color: blueviolet;
+      position: relative;
+    }
+    .minion {
+      background-image: url(minionumm.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 250px;
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+    }
+    h2 {
+      color: rgb(43, 226, 67);
+    }
+    p {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  
+  }
+  
