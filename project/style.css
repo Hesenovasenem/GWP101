@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:  "Roboto", sans-serif;
+    
+  }
+  
+  /* HEADER */
+  header {
+    width: 100%;
+    background-color: bisque;
+    /* border-bottom: 1px solid black; */
+    position: fixed;
+    top: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+  
+  #header nav ul {
+    display: flex;
+    column-gap: 25px;
+  }
+  
+  #header .logo {
+    text-shadow: 3px 3px 4px orange;
+  }
+  #header .logo span {
+    color: orange;
+  }
+  
+  /* BANNER SECTION */
+  #hero-banner {
+    background-color: bisque;
+    margin-top: 57px;
+  }
+  #hero-banner .hero-banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero-banner .hero-banner .hero-banner-info,
+  #hero-banner .hero-banner .hero-banner-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-banner-image .border {
+    width: 200px;
+    border: 2px solid orange;
+    border-radius: 5px;
+  }
+  .hero-banner-image .border img {
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+    left: -20px;
+  }
+  .hero-banner .hero-banner-info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .hero-banner .line {
+    border: 2px solid orange;
+    width: 100px;
+  }
+  .hero-banner .hero-banner-info .title {
+    font-size: 48px;
+  }
+  .hero-banner .hero-banner-info .position {
+    font-size: 24px;
+    color: gray;
+  }
+  .hero-banner .hero-banner-info .hire-me {
+    background-color: orange;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100px;
+  }
+  /* section2 */
+  #hero-banner2 {
+    background-color: white;
+    margin-top: 57px;
+  }
+  #hero-banner2 .hero-banner2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero-banner2 .hero-banner2 .hero-banner-info2,
+  #hero-banner2 .hero-banner2 .hero-banner-image2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-banner-image2 .border2 {
+    width: 200px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    height: 310px;
+}
+  .hero-banner-image2 .border2 img {
+    width: 200px;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+    right: -20px;
+  }
+  .hero-banner2 .hero-banner-info2 .hire-me2 {
+    background-color: orange;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 150px;
+  }
+  .hero-banner2 .line2 {
+    border: 2px solid orange;
+    width: 100px;
+  }
+  .hero-banner2 .hero-banner-info2 .title2 {
+    font-size: 48px;
+  }
+  .hero-banner2 .hero-banner-info2 .lorem {
+    flex-direction: column;
+    row-gap: 20px;
+    position: relative;
+  }
+  .hero-banner2 .hero-banner-info2{
+    column-gap: 180px;
+  }
+  .section3 {
+    background-color: rgb(194, 194, 201);
+    margin-top: 58px;
+    padding: 90px;
+  }
+  .homework {
+    display: flex;
+    column-gap: 100px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 20px;
+  }
+  .section3 .title3 .line3 {
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 20px;
+   
+  }
+  .section3 .homework .development {
+    border: 2px white ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: rgb(21, 21, 108);
+  }
+  .section3 .homework .design {
+    border: 2px white ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: rgb(21, 21, 108);
+  }
+  .section3 .homework .app {
+    border: 2px white ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    color: rgb(21, 21, 108);
+  }
+  .app .line5 {
+    border: 2px solid orange;
+    width: 100px;
+  }
+  .design .line4 {
+    border: 2px solid orange;
+    width: 100px;
+  }
+  .development .line3 {
+    border: 2px solid orange;
+    width: 100px;
+  }
+  .homework .development {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homework .design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section3 .line3 {
+    border: 2px solid orange;
+    width: 100px;
+    display: flex;
+    }
+    /* footer */
+  footer{
+    background-color: rgb(30, 30, 32);
+    height: 150px;
+    box-sizing: border-box;
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot i{
+   color: #e9b949;
+   margin: 0 10px 35px 10px;
+}
+.footerend{
+    color: rgb(115, 123, 131);
+}
+@media only screen and (max-width: 991px) {
+    #hero-banner , .hero-banner2 .container , .section3 .container .web{
+        display: flex;
+        flex-direction: column;
+   
+ }
+}
+
+  
+  
+  
+
+  
+
+  
+  
+  
+ 
