@@ -9,7 +9,7 @@
     max-width: 1300px;
     margin: 0 auto;
 }
-.fa-bars{
+.none{
     display: none;
 }
 header{
@@ -19,7 +19,7 @@ header{
     color: white;
     position: fixed;
     margin-top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 header nav{
     display: flex;
@@ -151,19 +151,19 @@ span{
         display: none;
     }
     .boxes{
-        border: 2px solid brown;
+        border: 2px solid yellow;
         position: relative;
-        height: 200px;;
+        height: 100%;
+        display: flex;
     }
     .box{
         top: 0;
     }
-    .info div::after{
-        right: 20%;
-    }
     .box{
-    height: 200px;
-    width: 200px;
+    position: static;
+
+    height: 100px;
+    width: 100px;
     }
     .sec3{
         height: 100%;
