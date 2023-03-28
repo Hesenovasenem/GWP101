@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.sec1{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 1300px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1.3s;
+    text-align: center;
+}
+h2:hover{
+    display: none;
+}
+p{
+    display: none;
+}
+.item:hover p{
+    display: block;
+}
+.item:hover h2{
+    display: none;
+}
+.item:first-child{
+    background-color: brown;
+}
+.item:nth-child(2){
+    background-color: blue;
+}
+.item:nth-child(3){
+    background-color: purple;
+}
+.item:nth-child(4){
+    background-color: rgb(82, 82, 20);
+}
+.item:first-child:hover{
+    transform: scale(1.6);
+}
+.item:nth-child(2):hover{
+    transform: translate(50%,-40%);
+}
+.item:nth-child(3):hover{
+    transform: rotateY(360deg);
+}
+.item:nth-child(4):hover{
+    transform: skewX(40deg);
+}
+.sec2{
+    width: 1300px;
+    height: 700px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+}
+.img1{
+    height: 200px;
+    width: 200px;
+}
+.img2{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+.earth{
+    animation: rotation 10s infinite linear;
+}
+.img1{
+    animation: rotation 100s infinite linear;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
