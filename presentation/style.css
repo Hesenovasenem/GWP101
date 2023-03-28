@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.green1{
+    color: rgb(4, 4, 75);
+    font-family: 'Grand hotel',cursive;
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+.title{
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: 2px;
+}
+button {
+    border: none;
+    background-color:red;
+}
+.container{
+    margin: auto;
+    max-width: 1000px;
+}
+/* section1 */
+.sec1{
+    background-color: rgb(211, 180, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec1 .container{
+    padding: 100px 0 50px 0;
+    
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.first p{
+      margin: 25px 0;
+    text-align: center;
+    color: rgb(10, 9, 9) ;
+}
+.but{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.but a{
+    color: white;
+}
+.same{
+    flex-direction: column;
+    display: flex;
+    margin: 20px;
+}
+.same .text{
+    text-align: center;
+}
+.same .title .text {
+    margin: 15px 0;
+}
+.same img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+span{
+    color: #688f37;
+    text-align: center;
+}
+/* section2 */
+.sec2{
+    background-color:  rgb(211, 180, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .container{
+    padding: 100px 0 50px 0;
+}
+.sec2 .green1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .indentical{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    width: 250px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+.sec2 .indentical img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+.sec2 .indentical .title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sec2 .indentical p{
+    margin: 0 10px;
+    text-align: center;
+    color: black ;
+}
+.sec2 .indentical button{
+    width: 150px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.sec2 .indentical{
+    position: relative;
+}
+.sec2 .indentical i{
+    color: red;
+}
+.sec2 .indentical .icon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(205, 179, 131);
+}
+@media only screen and (min-width: 992px) {
+    .sec1 .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .sec2 .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    button:hover{    
+        background-color:red;
+        box-sizing: border-box;
+    }
+    
+    button:hover a{
+        color: #f1f5f9;
+        font-weight: 1000;
+    }
+    .sec2 .green1{
+        text-align: start;
+        margin: 20px;
+    }
+    .sec2 .title{
+        text-align: center;
+        margin: 10px;
+    }
+    .indentical p , .indentical h2{
+        display: flex;
+        text-align: start;
+    }
+    .sec2 .indentical{
+        transition: transform .1s;
+    } 
+    .sec2 .indentical:hover{
+        transform: scale(1.1);
+    }
+    .sec1 .same:hover{
+        transform: scale(1.1);
+    }
+    .sec1 .same{
+        transition: .1s;
+    }
+    /* .sec2 .margin{
+        padding: 50px;
+    } */
+}
+@media only screen and (max-width: 992px) and (min-width: 778px){
+    .sec1 .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* height: 100; */
+    }
+    .first{
+        justify-self: start;
+        align-items: start;
+    }
+    .sec1 .green1{
+        text-align: start;
+    }
+    .sec1 .title{
+        text-align: start;
+    }
+    .sec1 p{
+        text-align: start;
+    }
+}
