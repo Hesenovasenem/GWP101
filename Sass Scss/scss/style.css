@@ -1,0 +1,100 @@
+header {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  transition: 1.2s;
+}
+header nav ul li:hover {
+  transform: scale(1.5);
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 15%;
+  transition: 1.2s;
+}
+header nav ul li a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.5);
+}
+header nav ul li i {
+  color: white;
+  padding: 15px;
+  border-radius: 15%;
+}
+header nav ul li i:hover {
+  background-color: white;
+  color: black;
+}
+
+section {
+  height: 800px;
+  border: 3px solid;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .border {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+section .border .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: 1px dotted;
+  transition: 1.5s;
+}
+section .border .box:hover {
+  transform: rotateX(360deg);
+}
+section .border .box:hover h1 {
+  display: none;
+}
+section .border .box:hover img {
+  display: block;
+}
+section .border .box img {
+  display: none;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+footer .foot {
+  display: flex;
+  -moz-column-gap: 350px;
+       column-gap: 350px;
+  color: rgb(68, 68, 68);
+}
+footer .foot .foot1 h2 {
+  color: black;
+}
+footer .foot .foot1 ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+footer .foot .foot1 ul li a {
+  text-decoration: none;
+  color: rgb(68, 68, 68);
+}/*# sourceMappingURL=style.css.map */

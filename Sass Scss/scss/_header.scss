@@ -1,0 +1,40 @@
+
+header{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                transition: 1.2s;
+                &:hover{
+                    transform: scale(1.5);
+                }
+                a{  text-decoration: none;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 15%;
+                    transition: 1.2s;
+                    &:hover{
+                            background-color: white;
+                            color: black;
+                            transform: scale(1.5);
+                            
+                        }
+                }
+                i{
+                    color: white;
+                    padding: 15px;
+                    border-radius: 15%;
+                    &:hover{
+                        background-color: white;
+                        color: black
+                    }
+                }
+            }
+        }
+    }
+}
