@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  background-image: url(./bgplate.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header nav {
+  height: 30vh;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aliceblue;
+  padding: 20px;
+  color: white;
+}
+header nav ul li a {
+  position: relative;
+  color: aliceblue;
+}
+header nav ul li a:hover::after {
+  content: "";
+  border: 2px solid brown;
+  width: 18px;
+  display: block;
+  position: absolute;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 50px;
+}
+header .content img {
+  width: 700px;
+  height: 700px;
+}
+header .content .texts {
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+}
+header .content .texts a {
+  color: aliceblue;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  border: 2px solid;
+  width: 130px;
+  height: 60px;
+  background-color: rgb(138, 84, 65);
+  text-align: center;
+  padding: 19px;
+}
+header .content .texts a:hover {
+  transform: scale(1.2);
+  background-color: bisque;
+  color: rgb(155, 126, 87);
+}
+header .content .texts p {
+  color: rgb(138, 84, 65);
+  text-decoration-line: line-through;
+  text-decoration-color: rgb(138, 84, 65);
+  font-size: 30px;
+  row-gap: 30px;
+}
+header .content .texts h1 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 70px;
+}
+header .content .img {
+  width: 100px;
+  height: 100px;
+  transform: translate(-650px, -50px);
+  transition: 0.5s;
+}
+header .content .img:hover {
+  transform: translate(-650px, 200px);
+}/*# sourceMappingURL=main.css.map */
