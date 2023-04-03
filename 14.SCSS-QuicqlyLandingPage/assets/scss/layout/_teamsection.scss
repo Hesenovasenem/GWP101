@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    .text{
+        width: 50%;
+        row-gap: 30px;
+    }
+    .image{
+        width: 50%;
+    }
+}
