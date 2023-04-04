@@ -1,0 +1,175 @@
+
+
+#hero {
+  margin-top: 75px;
+  background: #fafafa;
+  @include flexbox();
+  .hero {
+    width: 100%;
+    height: 100vh;
+    @include flexbox();
+    column-gap: 109px;
+    .first {
+      width: 50%;
+      h5 {
+        color: $dark-green;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 24px;
+       
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 120%;
+        color: $bg-dark;
+        margin-bottom: 32px;
+        
+      }
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: $bg-dark;
+        margin-bottom: 48px;
+        
+      }
+      .sign-up2 {
+        padding: 16px 36px 15px;
+        gap: 10px;
+        color: $secondary-color;
+        background-color: $dark-green;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        border: none;
+        margin-right: 20px;
+      }
+      .learn-more {
+        padding: 16px 36px 15px;
+        gap: 10px;
+        background: $secondary-color;
+        color: $bg-dark;
+        border: 1px solid rgba(32, 72, 79, 0.1);
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+    .second {
+      position: relative;
+      width: 50%;
+      .image {
+        width: 415px;
+        height: 490px;
+        border-radius: 12px;
+      }
+      .table1 {
+        position: absolute;
+        display: flex;
+        padding: 20px;
+        column-gap: 24px;
+        background: #ffffff;
+        box-shadow: 0px 4px 40px rgba(138, 138, 138, 0.04);
+        border-radius: 12px;
+        top: 10%;
+        right: 20%;
+
+        .text {
+          h4 {
+            color: $dark-color;
+            margin-bottom: 7px;
+          }
+          p {
+            color: $dark-green;
+          }
+        }
+      }
+      .table2 {
+        position: absolute;
+        display: flex;
+        padding: 20px;
+        background: $secondary-color;
+        box-shadow: 0px 4px 40px rgba(138, 138, 138, 0.04);
+        border-radius: 12px;
+        column-gap: 20px;
+        .small {
+          width: 64px;
+          height: 64px;
+          background-color: $primary-light;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .lines {
+          h4 {
+            color: $dark-green;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:991px){
+ 
+}
+
+
+
+
+#team {
+  background: #fafafa;
+  .team {
+    padding: 60px 0;
+    .comment {
+      text-align: center;
+      h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: $bg-dark;
+        margin-bottom: 16px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $bg-dark;
+        margin-bottom: 64px;
+      }
+    }
+    .row {
+      .col {
+        text-align: center;
+        img {
+          margin-bottom: 16px;
+        }
+        h4 {
+          margin-bottom: 8px;
+          text-align: center;
+        }
+        p {
+          color: $dark-green;
+          margin-bottom: 36px;
+        }
+        .myicon {
+          color: $dark-green;
+          .fa-brands {
+            padding-top: 14px;
+            border: 1px solid $dark-green;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

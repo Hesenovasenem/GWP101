@@ -1,9 +1,5 @@
-@mixin flexBox($justify-content: space-between, $align-items: center)
-{
+@mixin flexbox($justify-content: space-between ,$align-items: center ){
     display: flex;
     justify-content: $justify-content;
     align-items: $align-items;
-}
-@mixin textsize($font-family: 'Raleway' sans-serif){
-font-family: $font-family;
 }

@@ -1,63 +1,66 @@
-header{
-    background-color:$dark-green;
-    color: $bg-light;
-    height: 75px;
-    font-family: 'Raleway' sans-serif;
-    // @include flexBox();
-    
-    .header{
-        @include flexBox();
-        padding: 30px;
-        height: 32px;
-        // gap: 250px;
-        height: 0px;
-        
-        nav{
-            ul{
-                @include flexBox();
-                gap: 45px;
-                li{
-                    a{
-                        color: $bg-light;
-                        @include textsize();
-                        font-family: 'Raleway' sans-serif;
-                    }
-                }
+header {
+    background-color: $dark-green;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    width: 100%;
+    #header {
+      @include flexbox();
+      height: 75px;
+      h4 {
+        color: $secondary-color;
+      }
+      nav {
+          @include flexbox();
+        ul {
+          @include flexbox();
+          column-gap: 32px;
+          li {
+            a {
+              font-family: "Plus Jakarta Sans";
+              font-weight: 400;
+              font-size: 16px;
+              line-height: normal;
+              text-decoration: none;
+              color: $secondary-color;
+              @include flexbox();
             }
+          }
         }
-        .end{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 60px;
-            .btn-sign{
-                background-color:$primary-green;
-                padding:10px, 16px, 10px, 16px;
-                border-radius: 8px;
-                width: 82px;
-                height: 41px;
-                gap: 60px;
-            }
+      }
+      .buttons{
+          display: flex;
+          column-gap:12px;
+        .sign-up {
+          @extend %primary-button;
+          background-color: $primary-green;
+          color: $dark-green;
         }
+        .log-in {
+          @extend %primary-button;
+          color: $secondary-color;
+          background-color: transparent;
+        }
+      }
+      img{
+          display: none;
+          width: 50px;
+      }
     }
-}
-section{
-    .content{
-        display: flex;
-            .text{
-                width: 50%;
-                row-gap: 30px;
-            }
-            .image{
-                .girl{
-                width: 50%;
-                height: 490px;
-                width: 415px;
-                left: 875px;
-                top: 125px;
-                border-radius: 12px;
-                }
-
-            }
-    }
-}
+  }
+  
+  @media only screen and (max-width:767px){
+      header{
+          #header{
+              nav{
+                  display: none;
+              }
+              .buttons{
+                  display: none;
+              }
+              img{
+                  display: block ;
+              }
+          }
+      }
+  }

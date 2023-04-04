@@ -1,0 +1,112 @@
+#footer{
+    background-color: $bg-dark;
+    color: $secondary-color;
+    padding: 70px 0 80px 0;
+    .footer-line{
+        @include flexbox();
+        .footer-line-1{
+            width: 50%;
+            h3{
+                font-weight: 700;
+                font-size: 32px;
+                margin-bottom: 32px;
+            }
+            form{
+                label{
+                    font-weight: 400;
+                    font-size: 16px;
+                    width: 200px;
+                    margin-bottom: 20px;
+                }
+                .allfeaturesl{
+                    width: 50%;
+                }
+                .email{
+                    font-weight: 400;
+                    font-size: 18px;
+                    padding: 15px 24px;
+                    border: none;
+                    border-radius:8px 0px 0px 8px ;
+                    outline: none;
+                }
+                .signbtn{
+                    font-weight: 400;
+                    font-size: 18px;
+                    padding:18px 36px ;
+                    border-radius: 0px 8px 8px 0px;
+                    border: none;
+                    background-color: $primary-green;
+                    outline: none;
+                    position: relative;
+                    left: -20px;
+                    top: 0;
+                }
+            }
+        }
+        .footer-line-2{
+            width: 50%;
+            display: flex;
+            column-gap: 80px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+                h5{
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                li{
+                    a{
+                        color: $primary-light;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+#footer-bottom{
+    background-color: $bg-dark;
+    border-top: 1px solid #DCF2ED;
+    padding: 14px 0 16px 0;
+    .footer-bottom{
+        text-align: center;
+        color: $secondary-color;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    #footer {
+      .footer-line-1 {
+        form {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #footer {
+      .footer-line {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .footer-line-1 {
+          width: 100%;
+          .signbtn {
+            display: none;
+          }
+        }
+        .footer-line-2 {
+          display: flex;
+          flex-direction: column;
+          row-gap: 50px;
+        }
+      }
+    }
+  }

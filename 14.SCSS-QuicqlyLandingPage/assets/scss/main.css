@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 * {
   list-style: none;
   text-decoration: none;
@@ -53,9 +54,10 @@ table {
 }
 
 .container {
-  max-width: 1360px;
+  max-width: 1440px;
   padding: 0 5%;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 h1 {
@@ -72,6 +74,10 @@ h3 {
 
 h4 {
   font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 h5 {
@@ -82,58 +88,345 @@ h6 {
   font-size: 16px;
 }
 
-header {
-  background-color: #20484F;
-  color: #FFFFFF;
-  height: 75px;
-  font-family: "Raleway" sans-serif;
-}
-header .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  height: 32px;
-  height: 0px;
-}
-header .header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 45px;
-}
-header .header nav ul li a {
-  color: #FFFFFF;
-  font-family: "Raleway" sans-serif;
-  font-family: "Raleway" sans-serif;
-}
-header .header .end {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-header .header .end .btn-sign {
-  background-color: #B8E4DA;
-  padding: 10px, 16px, 10px, 16px;
+header #header .buttons .log-in, header #header .buttons .sign-up {
+  padding: 10px 16px;
   border-radius: 8px;
-  width: 82px;
-  height: 41px;
-  gap: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
 }
 
-section .content {
+header {
+  background-color: #20484F;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  width: 100%;
+}
+header #header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
 }
-section .content .text {
-  width: 50%;
-  row-gap: 30px;
+header #header h4 {
+  color: #FFFFFF;
 }
-section .content .image .girl {
+header #header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+header #header nav ul li a {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #header .buttons {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+header #header .buttons .sign-up {
+  background-color: #B8E4DA;
+  color: #20484F;
+}
+header #header .buttons .log-in {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+header #header img {
+  display: none;
+  width: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  header #header nav {
+    display: none;
+  }
+  header #header .buttons {
+    display: none;
+  }
+  header #header img {
+    display: block;
+  }
+}
+#footer {
+  background-color: #072125;
+  color: #FFFFFF;
+  padding: 70px 0 80px 0;
+}
+#footer .footer-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-line .footer-line-1 {
   width: 50%;
-  height: 490px;
+}
+#footer .footer-line .footer-line-1 h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+#footer .footer-line .footer-line-1 form label {
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+#footer .footer-line .footer-line-1 form .allfeaturesl {
+  width: 50%;
+}
+#footer .footer-line .footer-line-1 form .email {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 8px 0px 0px 8px;
+  outline: none;
+}
+#footer .footer-line .footer-line-1 form .signbtn {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 18px 36px;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  background-color: #B8E4DA;
+  outline: none;
+  position: relative;
+  left: -20px;
+  top: 0;
+}
+#footer .footer-line .footer-line-2 {
+  width: 50%;
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#footer .footer-line .footer-line-2 ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+#footer .footer-line .footer-line-2 ul h5 {
+  font-weight: 700;
+  font-size: 18px;
+}
+#footer .footer-line .footer-line-2 ul li a {
+  color: #DCF2ED;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#footer-bottom {
+  background-color: #072125;
+  border-top: 1px solid #DCF2ED;
+  padding: 14px 0 16px 0;
+}
+#footer-bottom .footer-bottom {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 991px) {
+  #footer .footer-line-1 form {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #footer .footer-line {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #footer .footer-line .footer-line-1 {
+    width: 100%;
+  }
+  #footer .footer-line .footer-line-1 .signbtn {
+    display: none;
+  }
+  #footer .footer-line .footer-line-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+}
+#hero {
+  margin-top: 75px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hero .hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 109px;
+       column-gap: 109px;
+}
+#hero .hero .first {
+  width: 50%;
+}
+#hero .hero .first h5 {
+  color: #20484F;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+#hero .hero .first h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  color: #072125;
+  margin-bottom: 32px;
+}
+#hero .hero .first p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #072125;
+  margin-bottom: 48px;
+}
+#hero .hero .first .sign-up2 {
+  padding: 16px 36px 15px;
+  gap: 10px;
+  color: #FFFFFF;
+  background-color: #20484F;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  border: none;
+  margin-right: 20px;
+}
+#hero .hero .first .learn-more {
+  padding: 16px 36px 15px;
+  gap: 10px;
+  background: #FFFFFF;
+  color: #072125;
+  border: 1px solid rgba(32, 72, 79, 0.1);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+#hero .hero .second {
+  position: relative;
+  width: 50%;
+}
+#hero .hero .second .image {
   width: 415px;
-  left: 875px;
-  top: 125px;
+  height: 490px;
   border-radius: 12px;
+}
+#hero .hero .second .table1 {
+  position: absolute;
+  display: flex;
+  padding: 20px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(138, 138, 138, 0.04);
+  border-radius: 12px;
+  top: 10%;
+  right: 20%;
+}
+#hero .hero .second .table1 .text h4 {
+  color: #072125;
+  margin-bottom: 7px;
+}
+#hero .hero .second .table1 .text p {
+  color: #20484F;
+}
+#hero .hero .second .table2 {
+  position: absolute;
+  display: flex;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(138, 138, 138, 0.04);
+  border-radius: 12px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  bottom: -13%;
+  left: -13%;
+}
+#hero .hero .second .table2 .small {
+  width: 64px;
+  height: 64px;
+  background-color: #DCF2ED;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .hero .second .table2 .lines h4 {
+  color: #20484F;
+  margin-bottom: 16px;
+}
+
+#team {
+  background: #fafafa;
+}
+#team .team {
+  padding: 60px 0;
+}
+#team .team .comment {
+  text-align: center;
+}
+#team .team .comment h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #072125;
+  margin-bottom: 16px;
+}
+#team .team .comment p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #072125;
+  margin-bottom: 64px;
+}
+#team .team .row .col {
+  text-align: center;
+}
+#team .team .row .col img {
+  margin-bottom: 16px;
+}
+#team .team .row .col h4 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+#team .team .row .col p {
+  color: #20484F;
+  margin-bottom: 36px;
+}
+#team .team .row .col .myicon {
+  color: #20484F;
+}
+#team .team .row .col .myicon .fa-brands {
+  padding-top: 14px;
+  border: 1px solid #20484F;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
