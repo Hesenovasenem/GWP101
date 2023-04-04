@@ -10,3 +10,5 @@ ResponsiveTwoSection - https://earnest-babka-f91a21.netlify.app/
 
 Sass Scss-https://ephemeral-banoffee-4efdc5.netlify.app/
 SCSS-TRANSFORM - https://cozy-muffin-a261f0.netlify.app
+
+14.SCSS-QuicqlyLandingPage- https://earnest-shortbread-abe3bf.netlify.app
