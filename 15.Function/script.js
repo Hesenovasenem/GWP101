@@ -157,25 +157,26 @@ console.log(basketball(38, 8));
 // ]
 
 const arr11 = [
-  {
-      name: 'my name',
-      surname: 'my surname',
-      city: 'my city'
-  },
-  {
-      name: 'my name',
-      surname: 'my surname',
-      city: 'my city'
-  },
-  {
-      name: 'my name',
-      surname: 'my surname',
-      city: 'my city'
+    {
+        name: 'my name',
+        surname: 'my surname',
+        city: 'my city'
+    },
+    {
+        name: 'my name',
+        surname: 'my surname',
+        city: 'my city'
+    },
+    {
+        name: 'my name',
+        surname: 'my surname',
+        city: 'my city'
+    }
+  ]
+  function fillInfo(arr11) {
+    for(let item of arr11) {
+      item.name="Ulfat",item.surname="Zakirli", item.city="Baku"
+    }
+    return arr11
   }
-]
-function fillInfo(name,surname,city) {
-  for(let num of arr11) {
-     console.log(name,surname,city);
-  }
-}
-fillInfo('Myname', 'mySurname','MyCity')
+  console.log(fillInfo(arr11))
